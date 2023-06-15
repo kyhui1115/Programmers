@@ -7,6 +7,8 @@ function solution(want, number, discount) {
             let filteredD = d.filter(e => e === want[j])
             if(filteredD.length === number[j]) {
                 o = o + 1
+            } else {
+                break
             }
         }
         if(o === want.length) {
