@@ -18,7 +18,7 @@ function solution(numbers, hand) {
         }
         
         if(key_pad[1].includes(e)) {
-                        if(Math.abs(left[0] - 1) + Math.abs(left[1] - key_pad[1].indexOf(e)) 
+            if(Math.abs(left[0] - 1) + Math.abs(left[1] - key_pad[1].indexOf(e)) 
                < Math.abs(right[0] - 1) + Math.abs(right[1] - key_pad[1].indexOf(e)) ) {
                 left = [1, key_pad[1].indexOf(e)]
                 return 'L'
