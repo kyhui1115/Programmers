@@ -1,6 +1,9 @@
 function solution(phone_book) {
     phone_book.sort()
-    let answer = phone_book.some((value, index) => phone_book[index + 1]?.indexOf(value) === 0);
-
-    return !answer;
+    
+    for(let i = 0; i < phone_book.length - 1; i++) {
+        if(phone_book[i+1].indexOf(phone_book[i]) === 0) return false
+    }
+    
+    return true
 }
