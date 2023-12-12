@@ -13,7 +13,7 @@ function solution(bridge_length, weight, truck_weights) {
             result.push(queue.shift())
         }
         
-        if(queue.length <= bridge_length && sum + truck_weights[0] <= weight) {
+        if(truck_weights[0] && queue.length <= bridge_length && sum + truck_weights[0] <= weight) {
             sum += truck_weights[0]
             queue.push([truck_weights.shift(), count])
         }
