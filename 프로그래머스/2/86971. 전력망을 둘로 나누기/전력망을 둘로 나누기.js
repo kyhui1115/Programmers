@@ -9,7 +9,7 @@ function solution(n, wires) {
     const p = new Array(n).fill(-1);
     const q = [0];
     
-    for(let i = 0; i < q.length; i++){
+    for(let i = 0; i < g.length; i++){
         const u = q[i];
         for(const v of g[u]) if(v != p[u]) {
             p[v] = u;
